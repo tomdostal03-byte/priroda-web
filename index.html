@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krásy přírody</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height:1.6; background:#e0f7fa; color:#004d40; }
+
+        header {
+            background: linear-gradient(to right, #00796b, #004d40);
+            color:#fff; text-align:center; padding:40px 20px;
+        }
+        header h1 { font-size:2.8rem; margin-bottom:10px; }
+        header p { font-size:1.2rem; }
+
+        nav {
+            background:#004d40; display:flex; justify-content:center; gap:30px; padding:15px 0;
+        }
+        nav a { color:white; text-decoration:none; font-weight:bold; transition:color 0.3s; }
+        nav a:hover { color:#a7ffeb; }
+
+        main { padding:40px 20px; max-width:1200px; margin:auto; }
+        section { margin-bottom:60px; }
+        section h2 { font-size:2rem; margin-bottom:20px; border-bottom:3px solid #00796b; display:inline-block; padding-bottom:5px; }
+        section p { font-size:1.1rem; margin-bottom:20px; }
+        section img { width:100%; max-height:450px; object-fit:cover; border-radius:15px; transition: transform 0.3s, box-shadow 0.3s; }
+        section img:hover { transform:scale(1.05); box-shadow:0 10px 20px rgba(0,0,0,0.3); }
+
+        .flex { display:flex; flex-wrap:wrap; gap:20px; }
+        .flex > div { flex:1 1 45%; }
+
+        footer { background:#004d40; color:white; text-align:center; padding:25px; margin-top:40px; }
+
+        @media(max-width:768px){ .flex>div{ flex:1 1 100%; } header h1{ font-size:2rem; } section h2{ font-size:1.6rem; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Objevme krásy přírody</h1>
+    <p>Inspirace, relaxace a úžasné scenérie z celého světa</p>
+</header>
+
+<nav>
+    <a href="#lesy">Lesy</a>
+    <a href="#hory">Hory</a>
+    <a href="#voda">Řeky a jezera</a>
+    <a href="#zvirata">Zvířata</a>
+</nav>
+
+<main>
+    <section id="lesy">
+        <h2>Lesy</h2>
+        <p>Lesy jsou plné života a poskytují čerstvý vzduch. Jsou domovem tisíců rostlin a zvířat, od drobných hmyzů až po velké savce. Lesní ekosystémy jsou zásadní pro udržování klimatu, čištění vzduchu a zadržování vody. Procházet se v lese znamená odpočinout si od městského shonu a nasát klidnou atmosféru. Lesy také nabízejí mnoho možností pro turistiku, sběr plodů, pozorování ptáků a přírodní fotografie.</p>
+        <div class="flex">
+            <div><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Les"></div>
+            <div><img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?auto=format&fit=crop&w=800&q=80" alt="Lesní cesta"></div>
+        </div>
+    </section>
+
+    <section id="hory">
+        <h2>Hory</h2>
+        <p>Hory jsou symbolem síly a majestátnosti přírody. Nabízejí dechberoucí výhledy, turistické trasy a klid v přírodě. V horách najdeme rozmanité ekosystémy – od horských luk a lesů po skalnaté vrcholy. Hory ovlivňují počasí a řeky a jsou zdrojem pitné vody pro miliony lidí. Výstup na vrchol je odměnou pro tělo i duši, přináší pocit svobody, klidu a inspirace. Horolezectví a turistika také učí trpělivosti a odolnosti.</p>
+        <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1200&q=80" alt="Hory">
+    </section>
+
+    <section id="voda">
+        <h2>Řeky a jezera</h2>
+        <p>Voda je základem života. Řeky a jezera poskytují životní prostor pro ryby, ptáky, obojživelníky a rostliny. Slouží také lidem pro pití, zavlažování a rekreaci. Pobyt u vody snižuje stres a zlepšuje náladu. Voda vytváří unikátní krajiny – vodopády, jezera obklopená horami, tiché říčky uprostřed lesa. Je to místo odpočinku, rybaření, plavání nebo kanoistiky.</p>
+        <div class="flex">
+            <div><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Řeka"></div>
+            <div><img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=800&q=80" alt="Jezero"></div>
+        </div>
+    </section>
+
+    <section id="zvirata">
+        <h2>Zvířata</h2>
+        <p>Příroda je domovem nespočtu živočichů. Každý druh má své místo v ekosystému a přispívá k rovnováze přírody. Pozorovat zvířata ve volné přírodě je nezapomenutelný zážitek – od sledování ptáků při východu slunce po pozorování savců v lese. Zvířata nás učí respektu, trpělivosti a ohleduplnosti k životnímu prostředí. Fotografie a dokumentace zvířat pomáhá lidem více porozumět přírodě a chránit ohrožené druhy.</p>
+        <div class="flex">
+            <div><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Zvíře 1"></div>
+            <div><img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=800&q=80" alt="Zvíře 2"></div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Krásy přírody | Inspirace z celého světa</p>
+</footer>
+
+</body>
+</html>
